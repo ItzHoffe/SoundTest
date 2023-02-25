@@ -1,0 +1,9 @@
+name: Soundtest
+version: '${project.version}'
+main: dk.manaxi.soundtest.Main
+api-version: 1.19
+commands:
+  testsound:
+    usage: "Test med at tilføjer en sound"
+  testplay:
+    usage: "Test med at afspiller musiket"
