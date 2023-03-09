@@ -25,7 +25,7 @@ public class TestAddSound implements CommandExecutor {
         File file = new File(Main.getInstance().getDataFolder(), "nvr/test.ogg");
         Player player = (Player) commandSender;
         byte[] bytes = getBytesFromFile(file);
-        for (byte[] splitChunk : splitChunks(bytes, 100000)) {
+        for (byte[] splitChunk : splitChunks(bytes, 50000)) {
             JsonObject jsonObject = new JsonObject();
             jsonObject.addProperty("type", "addsound");
             String compressBase64 = Base64.encodeBase64String(splitChunk);
