@@ -31,6 +31,9 @@ public class TestAddSound implements CommandExecutor {
             String compressBase64 = Base64.encodeBase64String(splitChunk);
             jsonObject.addProperty("data", compressBase64);
             jsonObject.addProperty("id", file.getName());
+            if(strings.length == 1) {
+                jsonObject.addProperty("speakerId", strings[0]);
+            }
             //player.sendMessage(jsonObject.toString());
             MediaProtocol.sendLabyModMessage(player, "sound", jsonObject);
         }

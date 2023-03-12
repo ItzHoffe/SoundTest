@@ -17,6 +17,9 @@ public class TestPlay implements CommandExecutor {
         JsonObject jsonObject = new JsonObject();
         jsonObject.addProperty("type", "play");
         jsonObject.addProperty("id", "test");
+        if(strings.length == 1) {
+            jsonObject.addProperty("speakerId", strings[0]);
+        }
         MediaProtocol.sendLabyModMessage(player, "sound", jsonObject);
         return true;
     }

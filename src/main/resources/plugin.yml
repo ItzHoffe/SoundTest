@@ -7,3 +7,5 @@ commands:
     usage: "Test med at tilføjer en sound"
   testplay:
     usage: "Test med at afspiller musiket"
+  testaddspeaker:
+    usage: "Test med at tilføje speaker"

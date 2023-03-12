@@ -13,6 +13,7 @@ public final class Main extends JavaPlugin {
         instance = this;
         new TestAddSound();
         new TestPlay();
+        new TestAddSpeaker();
     }
 
     @Override
